@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive Student Registration System using HTML, CSS and JavaScript">
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Student Registration System</h1>
+
+</header>
+
+<main class="container">
+  <section class="form-section">
+    <h2>Register Student</h2>
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Student Name" required>
+      <input type="number" id="studentId" placeholder="Student ID" required>
+      <input type="email" id="email" placeholder="Email ID" required>
+      <input type="number" id="contact" placeholder="Contact Number" required>
+      <button type="submit">Save Student</button>
+    </form>
+  </section>
+
+  <section class="table-section">
+    <h2>Registered Students</h2>
+    <div class="table-container" id="tableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
